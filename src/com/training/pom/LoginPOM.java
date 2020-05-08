@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class LoginPOM {
 	public LoginPOM(WebDriver driver) {
@@ -192,7 +193,12 @@ public class LoginPOM {
 		
 		String actualNewRegistrationMessage = this.RegistratioMessage.getText();
 		String expectNewRegistrationMessage = "An e-mail has been sent to remind you of your login and password.";
-		Assert.assertTrue(actualNewRegistrationMessage.contains(expectNewRegistrationMessage));
+		
+		SoftAssert softassert = new SoftAssert();
+		softassert.assertEquals(actualNewRegistrationMessage, expectNewRegistrationMessage);
+		System.out.println("Next Step");
+		softassert.assertAll();
+		
 		
 		
 	}
