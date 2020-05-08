@@ -192,7 +192,8 @@ public class LoginPOM {
 		
 		String actualNewRegistrationMessage = this.RegistratioMessage.getText();
 		String expectNewRegistrationMessage = "An e-mail has been sent to remind you of your login and password.";
-		Assert.assertEquals(actualNewRegistrationMessage, expectNewRegistrationMessage);
+		Assert.assertTrue(actualNewRegistrationMessage.contains(expectNewRegistrationMessage));
+		
 		
 	}
 
