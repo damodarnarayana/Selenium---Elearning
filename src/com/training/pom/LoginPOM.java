@@ -122,8 +122,11 @@ public class LoginPOM {
 	public void ForgetPasswordMessage() {
 	String actualMessage = 	this.forgetAleartMessage.getText();
 	String expectedMessage = "This platform was unable to send the email. Please contact Admin User for more information.";
+	SoftAssert softassert = new SoftAssert();
 	Assert.assertEquals(actualMessage, expectedMessage);
-	System.out.println();			
+	System.out.println("Next Step");
+	softassert.assertAll();
+			
 	}
 //######################################################################################
 //  User Registering the Application as New User - Role - Teacher
