@@ -53,9 +53,10 @@ public class LoginTests {
 		loginPOM.clickLoginBtn();
 		screenShot.captureScreenShot("Third");
 		
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 	
 	}
+	
 	@Test(priority =2)
 	public void validForgetPassword() throws InterruptedException {
 		loginPOM.clickForgottn(); 
