@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
 
 public class LoginPOM {
 	public LoginPOM(WebDriver driver) {
@@ -27,6 +26,8 @@ public class LoginPOM {
 	private WebElement loginBtn; 
 	
 	
+	
+	
 //######################################################################################
 //  Forget Password Test Case
 //######################################################################################
@@ -44,7 +45,7 @@ public class LoginPOM {
 	private WebElement forgetAleartMessage;
 	
 //######################################################################################
-//  //  User Registering the Application as New User - Role - Teacher
+//  User Registering the Application as New User - Role - Teacher
 //######################################################################################
 	
 	@FindBy(xpath="//a[@href='http://elearning.upskills.in/main/auth/inscription.php']")
@@ -122,11 +123,8 @@ public class LoginPOM {
 	public void ForgetPasswordMessage() {
 	String actualMessage = 	this.forgetAleartMessage.getText();
 	String expectedMessage = "This platform was unable to send the email. Please contact Admin User for more information.";
-	SoftAssert softassert = new SoftAssert();
 	Assert.assertEquals(actualMessage, expectedMessage);
-	System.out.println("Next Step");
-	softassert.assertAll();
-			
+	System.out.println();			
 	}
 //######################################################################################
 //  User Registering the Application as New User - Role - Teacher
@@ -196,13 +194,7 @@ public class LoginPOM {
 		
 		String actualNewRegistrationMessage = this.RegistratioMessage.getText();
 		String expectNewRegistrationMessage = "An e-mail has been sent to remind you of your login and password.";
-		
-		SoftAssert softassert = new SoftAssert();
-		softassert.assertEquals(actualNewRegistrationMessage, expectNewRegistrationMessage);
-		System.out.println("Next Step");
-		softassert.assertAll();
-		
-		
+		Assert.assertEquals(actualNewRegistrationMessage, expectNewRegistrationMessage);
 		
 	}
 
