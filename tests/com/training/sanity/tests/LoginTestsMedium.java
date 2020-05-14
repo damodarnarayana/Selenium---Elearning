@@ -48,7 +48,7 @@ public class LoginTestsMedium {
 	}
 	
 
-   @Test (priority =1)//TO verify whether application allows teacher to review, rate & send email about the test
+   @Test (priority =4)//TO verify whether application allows teacher to review, rate & send email about the test
 	public void ELTC_036() throws InterruptedException {
 		LoginPOMMedium.enterTeacherLoginUserid("damodarnarayanat");
 		LoginPOMMedium.enterTeacherLoginPassword("Damodar@t");
@@ -62,10 +62,10 @@ public class LoginTestsMedium {
 	  	LoginPOMMedium.TclickOnCorrectTest();	  			   	
 		Thread.sleep(6000);		
 		LoginPOMMedium.TMessageSent();	
-		screenShot.captureScreenShot("First");
+		screenShot.captureScreenShot("ELTC_036");
 	   }
 	
-	@Test (priority =2)//TO verify whether application allows teacher to Report & send mail to student about the test submitted
+	@Test (priority =5)//TO verify whether application allows teacher to Report & send mail to student about the test submitted
 	public void ELTC_037() throws InterruptedException {
 		LoginPOMMedium.enterTeacherLoginUserid("damodarnarayanat");
 		LoginPOMMedium.enterTeacherLoginPassword("Damodar@t");
@@ -81,11 +81,11 @@ public class LoginTestsMedium {
 	  	LoginPOMMedium.TclickOnCorrectTest();	  			   	
 		Thread.sleep(6000);			
 		LoginPOMMedium.TMessageSent();
-		screenShot.captureScreenShot("Second");
+		screenShot.captureScreenShot("ELTC_037");
 		
 	   }
 	
-	  @Test (priority =3)//TO verify whether application allows teacher to generate report based on the student
+	  @Test (priority =6)//TO verify whether application allows teacher to generate report based on the student
 	  public void ELTC_039() throws InterruptedException {
 		LoginPOMMedium.enterTeacherLoginUserid("damodarnarayanat");
 		LoginPOMMedium.enterTeacherLoginPassword("Damodar@t");
@@ -100,6 +100,6 @@ public class LoginTestsMedium {
 	  	LoginPOMMedium.TclickOnCorrectTest();	  			   	
 		Thread.sleep(6000);			
 		LoginPOMMedium.TMessageSent();
-		screenShot.captureScreenShot("Third");		
+		screenShot.captureScreenShot("ELTC_039");		
 	   }
 }

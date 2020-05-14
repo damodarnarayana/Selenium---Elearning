@@ -1,53 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="99938" started-at="2020-05-13T04:05:54Z" finished-at="2020-05-13T04:07:34Z">
+  <suite name="Parallel Suite" duration-ms="201999" started-at="2020-05-14T02:30:33Z" finished-at="2020-05-14T02:33:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="99938" started-at="2020-05-13T04:05:54Z" finished-at="2020-05-13T04:07:34Z">
+    <test name="Sample test" duration-ms="201999" started-at="2020-05-14T02:30:33Z" finished-at="2020-05-14T02:33:55Z">
       <class name="com.training.sanity.tests.LoginTestsMedium">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2020-05-13T00:05:54Z" finished-at="2020-05-13T00:05:54Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2020-05-13T22:32:05Z" finished-at="2020-05-13T22:32:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="setUp" is-config="true" duration-ms="13301" started-at="2020-05-13T00:05:54Z" finished-at="2020-05-13T00:06:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="setUp" is-config="true" duration-ms="11994" started-at="2020-05-13T22:32:05Z" finished-at="2020-05-13T22:32:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ELTC_036()[pri:1, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="ELTC_036" duration-ms="19450" started-at="2020-05-13T00:06:07Z" finished-at="2020-05-13T00:06:27Z">
+        <test-method status="PASS" signature="ELTC_036()[pri:4, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="ELTC_036" duration-ms="21977" started-at="2020-05-13T22:32:17Z" finished-at="2020-05-13T22:32:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ELTC_036 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="tearDown" is-config="true" duration-ms="1768" started-at="2020-05-13T00:06:27Z" finished-at="2020-05-13T00:06:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="tearDown" is-config="true" duration-ms="1772" started-at="2020-05-13T22:32:39Z" finished-at="2020-05-13T22:32:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="setUp" is-config="true" duration-ms="11718" started-at="2020-05-13T00:06:28Z" finished-at="2020-05-13T00:06:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="setUp" is-config="true" duration-ms="12588" started-at="2020-05-13T22:32:41Z" finished-at="2020-05-13T22:32:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ELTC_037()[pri:2, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="ELTC_037" duration-ms="19446" started-at="2020-05-13T00:06:40Z" finished-at="2020-05-13T00:06:59Z">
+        <test-method status="PASS" signature="ELTC_037()[pri:5, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="ELTC_037" duration-ms="23254" started-at="2020-05-13T22:32:53Z" finished-at="2020-05-13T22:33:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ELTC_037 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="tearDown" is-config="true" duration-ms="1825" started-at="2020-05-13T00:06:59Z" finished-at="2020-05-13T00:07:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="tearDown" is-config="true" duration-ms="1695" started-at="2020-05-13T22:33:16Z" finished-at="2020-05-13T22:33:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="setUp" is-config="true" duration-ms="11595" started-at="2020-05-13T00:07:01Z" finished-at="2020-05-13T00:07:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="setUp" is-config="true" duration-ms="13086" started-at="2020-05-13T22:33:18Z" finished-at="2020-05-13T22:33:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ELTC_039()[pri:3, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="ELTC_039" duration-ms="19000" started-at="2020-05-13T00:07:13Z" finished-at="2020-05-13T00:07:32Z">
+        <test-method status="PASS" signature="ELTC_039()[pri:6, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="ELTC_039" duration-ms="22031" started-at="2020-05-13T22:33:31Z" finished-at="2020-05-13T22:33:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ELTC_039 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@482f8f11]" name="tearDown" is-config="true" duration-ms="1788" started-at="2020-05-13T00:07:32Z" finished-at="2020-05-13T00:07:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="tearDown" is-config="true" duration-ms="1784" started-at="2020-05-13T22:33:53Z" finished-at="2020-05-13T22:33:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.training.sanity.tests.LoginTestsMedium -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.training.sanity.tests.LoginTests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="setUpBeforeClass" is-config="true" duration-ms="22" started-at="2020-05-13T22:30:33Z" finished-at="2020-05-13T22:30:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="setUp" is-config="true" duration-ms="14428" started-at="2020-05-13T22:30:33Z" finished-at="2020-05-13T22:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validTeacherSignUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="validTeacherSignUp" duration-ms="27435" started-at="2020-05-13T22:30:47Z" finished-at="2020-05-13T22:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTeacherSignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="tearDown" is-config="true" duration-ms="1858" started-at="2020-05-13T22:31:15Z" finished-at="2020-05-13T22:31:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="setUp" is-config="true" duration-ms="13952" started-at="2020-05-13T22:31:17Z" finished-at="2020-05-13T22:31:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.LoginTests@1593948d]" name="validLoginTest" duration-ms="9217" started-at="2020-05-13T22:31:31Z" finished-at="2020-05-13T22:31:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="tearDown" is-config="true" duration-ms="1689" started-at="2020-05-13T22:31:40Z" finished-at="2020-05-13T22:31:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="setUp" is-config="true" duration-ms="11702" started-at="2020-05-13T22:31:42Z" finished-at="2020-05-13T22:31:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validForgetPassword()[pri:2, instance:com.training.sanity.tests.LoginTests@1593948d]" name="validForgetPassword" duration-ms="9758" started-at="2020-05-13T22:31:53Z" finished-at="2020-05-13T22:32:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validForgetPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="tearDown" is-config="true" duration-ms="1699" started-at="2020-05-13T22:32:03Z" finished-at="2020-05-13T22:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.LoginTests -->
+    </test> <!-- Sample test -->
+  </suite> <!-- Parallel Suite -->
 </testng-results>
