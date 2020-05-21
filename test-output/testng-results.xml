@@ -1,95 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel Suite" duration-ms="201999" started-at="2020-05-14T02:30:33Z" finished-at="2020-05-14T02:33:55Z">
+  <suite name="Default suite" duration-ms="39980" started-at="2020-05-21T18:25:57Z" finished-at="2020-05-21T18:26:37Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="201999" started-at="2020-05-14T02:30:33Z" finished-at="2020-05-14T02:33:55Z">
-      <class name="com.training.sanity.tests.LoginTestsMedium">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2020-05-13T22:32:05Z" finished-at="2020-05-13T22:32:05Z">
+    <test name="Default test" duration-ms="39980" started-at="2020-05-21T18:25:57Z" finished-at="2020-05-21T18:26:37Z">
+      <class name="com.training.regression.tests.LoginExcelTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginExcelTest@482f8f11]" name="setUpBeforeClass" is-config="true" duration-ms="11" started-at="2020-05-21T14:25:57Z" finished-at="2020-05-21T14:25:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="setUp" is-config="true" duration-ms="11994" started-at="2020-05-13T22:32:05Z" finished-at="2020-05-13T22:32:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@482f8f11]" name="setUp" is-config="true" duration-ms="12658" started-at="2020-05-21T14:25:58Z" finished-at="2020-05-21T14:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ELTC_036()[pri:4, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="ELTC_036" duration-ms="21977" started-at="2020-05-13T22:32:17Z" finished-at="2020-05-13T22:32:39Z">
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@482f8f11]" name="loginDBTest" duration-ms="26650" started-at="2020-05-21T14:26:10Z" data-provider="excel-inputs" finished-at="2020-05-21T14:26:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[damodarnarayanat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Damodar@t]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Seleniumbatchabc23]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Seleniumbatchabc23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[This is a Selenium Course]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Seleniumbatchabc23]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[student_damodar]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Damodar@Student1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Seleniumbatchabc23]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ELTC_036 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="tearDown" is-config="true" duration-ms="1772" started-at="2020-05-13T22:32:39Z" finished-at="2020-05-13T22:32:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="setUp" is-config="true" duration-ms="12588" started-at="2020-05-13T22:32:41Z" finished-at="2020-05-13T22:32:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ELTC_037()[pri:5, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="ELTC_037" duration-ms="23254" started-at="2020-05-13T22:32:53Z" finished-at="2020-05-13T22:33:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ELTC_037 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="tearDown" is-config="true" duration-ms="1695" started-at="2020-05-13T22:33:16Z" finished-at="2020-05-13T22:33:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="setUp" is-config="true" duration-ms="13086" started-at="2020-05-13T22:33:18Z" finished-at="2020-05-13T22:33:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ELTC_039()[pri:6, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="ELTC_039" duration-ms="22031" started-at="2020-05-13T22:33:31Z" finished-at="2020-05-13T22:33:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ELTC_039 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsMedium@1b604f19]" name="tearDown" is-config="true" duration-ms="1784" started-at="2020-05-13T22:33:53Z" finished-at="2020-05-13T22:33:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.LoginTestsMedium -->
-      <class name="com.training.sanity.tests.LoginTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="setUpBeforeClass" is-config="true" duration-ms="22" started-at="2020-05-13T22:30:33Z" finished-at="2020-05-13T22:30:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="setUp" is-config="true" duration-ms="14428" started-at="2020-05-13T22:30:33Z" finished-at="2020-05-13T22:30:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validTeacherSignUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="validTeacherSignUp" duration-ms="27435" started-at="2020-05-13T22:30:47Z" finished-at="2020-05-13T22:31:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validTeacherSignUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="tearDown" is-config="true" duration-ms="1858" started-at="2020-05-13T22:31:15Z" finished-at="2020-05-13T22:31:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="setUp" is-config="true" duration-ms="13952" started-at="2020-05-13T22:31:17Z" finished-at="2020-05-13T22:31:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.LoginTests@1593948d]" name="validLoginTest" duration-ms="9217" started-at="2020-05-13T22:31:31Z" finished-at="2020-05-13T22:31:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="tearDown" is-config="true" duration-ms="1689" started-at="2020-05-13T22:31:40Z" finished-at="2020-05-13T22:31:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="setUp" is-config="true" duration-ms="11702" started-at="2020-05-13T22:31:42Z" finished-at="2020-05-13T22:31:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validForgetPassword()[pri:2, instance:com.training.sanity.tests.LoginTests@1593948d]" name="validForgetPassword" duration-ms="9758" started-at="2020-05-13T22:31:53Z" finished-at="2020-05-13T22:32:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validForgetPassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@1593948d]" name="tearDown" is-config="true" duration-ms="1699" started-at="2020-05-13T22:32:03Z" finished-at="2020-05-13T22:32:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.LoginTests -->
-    </test> <!-- Sample test -->
-  </suite> <!-- Parallel Suite -->
+        </test-method> <!-- loginDBTest -->
+      </class> <!-- com.training.regression.tests.LoginExcelTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

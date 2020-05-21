@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
 import com.training.pom.LoginPOM;
+import com.training.pom.LoginPOM2;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -19,7 +20,7 @@ public class LoginTests {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	private LoginPOM2 LoginPOM2;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -33,7 +34,7 @@ public class LoginTests {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver); 
+		LoginPOM2 = new LoginPOM2(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -48,9 +49,7 @@ public class LoginTests {
 	
 	@Test (priority =1)
 	public void validLoginTest() throws InterruptedException {
-		loginPOM.sendUserName("damodarnarayana1");
-		loginPOM.sendPassword("Damodar@1981");
-		loginPOM.clickLoginBtn();
+	
 		screenShot.captureScreenShot("Third");
 		
 		Thread.sleep(6000);
@@ -59,29 +58,29 @@ public class LoginTests {
 	
 	@Test(priority =2)
 	public void validForgetPassword() throws InterruptedException {
-		loginPOM.clickForgottn(); 
-		loginPOM.lostPwd("damodarnarayana@gmail.com");
-		loginPOM.submitForgottn();
-		loginPOM.ForgetPasswordMessage();
+		LoginPOM2.clickForgottn(); 
+		LoginPOM2.lostPwd("damodarnarayana@gmail.com");
+		LoginPOM2.submitForgottn();
+		LoginPOM2.ForgetPasswordMessage();
 		screenShot.captureScreenShot("First");
 		Thread.sleep(5000);	
 	}
 	
 	@Test(priority =0)
 	public void  validTeacherSignUp() throws InterruptedException {	 
-		loginPOM.RegisterNewUserLinkClick();
-		loginPOM.RegisterEnterFirstName("Damodar");
-		loginPOM.RegisterEnterLastName("Manala");
-		loginPOM.RegisterEnterEmail("damodarnarayana@gmail.com");
-		loginPOM.RegisterUserName("damodarnarayana1");
-		loginPOM.RegisterPassword1("Damodar@1981");
-		loginPOM.RegisterPassword2("Damodar@1981");
-		loginPOM.RegisterPhone("8043007042");
-		loginPOM.RegisterSlectLanguage("english");
+		LoginPOM2.RegisterNewUserLinkClick();
+		LoginPOM2.RegisterEnterFirstName("Damodar");
+		LoginPOM2.RegisterEnterLastName("Manala");
+		LoginPOM2.RegisterEnterEmail("damodarnarayana@gmail.com");
+		LoginPOM2.RegisterUserName("damodarnarayana1");
+		LoginPOM2.RegisterPassword1("Damodar@1981");
+		LoginPOM2.RegisterPassword2("Damodar@1981");
+		LoginPOM2.RegisterPhone("8043007042");
+		LoginPOM2.RegisterSlectLanguage("english");
 		Thread.sleep(5000);
-		loginPOM.RegisterRole();
+		LoginPOM2.RegisterRole();
 		Thread.sleep(5000);
-		loginPOM.RegisterSubmit();
+		LoginPOM2.RegisterSubmit();
 		screenShot.captureScreenShot("Second");
 	}
 
